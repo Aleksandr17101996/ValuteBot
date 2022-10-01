@@ -15,11 +15,6 @@ class CryptoComp:
         crypto_data = json.dumps(crypto_data)
         load_data = json.loads(crypto_data)
         price = load_data[base][quote]["PRICE"] * amount
-        #data = {}
-        #for i in load_data:
-        #    data[i] = {
-        #        "price": load_data[i][quote]["PRICE"],
-        #    }
         return round(price)
 
 
